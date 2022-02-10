@@ -1,3 +1,13 @@
+/**
+ * @file calculator.c
+ * @author Akshay Eknathe (akshayeknathe8788@gmail.com)
+ * @brief Mathematical Operations of calculator
+ * @version 0.1
+ * @date 2022-02-10
+ * 
+ * @copyright Copyright (c) 2022
+ * 
+ */
 #include "calculator.h"
 #include <stdio.h>
 
