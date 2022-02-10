@@ -1,0 +1,11 @@
+#TargetName:Dependencies
+#<TAB>Commands
+
+Build : calculator.c main.c 
+	gcc calculator.c main.c  -o calculator.out
+
+Run: Build
+	./calculator.out
+
+Clean: 
+	rm -rf *.o *.out *.i *.s

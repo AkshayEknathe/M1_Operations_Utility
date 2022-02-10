@@ -1,115 +1,83 @@
-/**
- * @file main.c
- * @author your name (you@domain.com)
- * @brief 
- * @version 0.1
- * @date 2022-02-10
- * 
- * @copyright Copyright (c) 2022
- * 
- */
+#include "calculator.h"
 #include <stdio.h>
- 
-#include <stdio.h>
-#include <math.h>
-#include <stdlib.h>
 
-int main()
-{
-    // variable declaration
-    int ch, num1, num2;
-    float result;
-    do
-    {
-        // Calculator display
-        printf (" Select an operation to perform the calculation in C Calculator: ");
-        printf (" \n 1.Addition  \t \t 2.Subtraction \n 3.Multiplication \t 4.Division \n 5.Square \t \t 6.Modulus \n 7.Exit \n \n Please, Make a choice ");
+ int addition();
+int subtraction();
+int multiplication();
+int division();
+int modulus();
+int power();
+int factorial(); // it is header file, conatins all function
+int main() {
+  // variable declaration
+  int choice; 
+  int n1,n2, ans=0;
+  double s ;
+  printf("Select the operation you want perform");
+  printf("\n");
+  printf("\n1.Additon\n 2.Subtraction\n 3.multplication \n 4.Division \n 5.Modules\n 6.Power\n 7.Factorial \n 8.Cube \n ");
+  scanf("%d", &choice);
 
-        scanf ("%d", &ch); // choose the operation
+// switch statement
+ switch (choice) {
 
+    case 1:
+      printf("Enter two number");
+      scanf("%d %d",&n1,&n2);
+      
+      ans = addition(n1,n2); //calling addition function
+      
+      printf("Addition of two numbers is = %d \n",ans);
+      break;
+    case 2:
+     printf("Enter two number");
+      scanf("%d %d",&n1,&n2);
+      ans=subtraction(n1,n2); //calling subtraction function
+      printf("subtraction of two numbers is = %d \n",ans);
+      break;
+    case 3:
+      printf("Enter two number");
+      scanf("%d %d",&n1,&n2);
+      ans = multiplication(n1,n2); //calling multiply function 
+      printf("multiplication of two numbers is = %d \n",ans);
+      break;
+    case 4:
+      printf("Enter two number");
+      scanf("%d %d",&n1,&n2);
+     ans = division(n1,n2);    //calling division function
+     printf("division of two numbers is = %d \n",ans);
 
-    // switch statement
-    switch (ch)
-    {
-        case 1:
-            // Add num1 and num2
-            printf (" You chose: Addition");
-            printf ("\n Enter First Number: ");
-            scanf (" %d", &num1);
-            printf (" Enter Second Number: ");
-            scanf (" %d", &num2);
-            result = num1 + num2; // Add num1 and num2
-            printf (" Addition of two numbers is: %.2f", result);
-            break; // break the function
+      break;
+    case 5: 
+        printf("Enter two number");
+        scanf("%d %d",&n1,&n2);
+       ans= modulus(n1,n2);  // calling madules function
+       printf("Modulus of number is = %d \n",ans);
+        break;  
+    case 6: 
+        printf("\nEnter number to find the power \n");
+        printf("number: ");
+        scanf("%d",&n1);
+       ans= power(n1);
+          printf("Power of number is = %d \n",ans);
+        break;  
+    case 7: 
+        printf("\nEnter a number to find factorial : ");
+        scanf("%d",&n1);
+        ans = factorial(n1); //calling  factorial function
+        printf("factorial of number is = %d \n",ans);
+        break;  
+        case 8: 
+        printf("\nEnter number to find the cube \n");
+        printf("number: ");
+        scanf("%d",&n1);
+       ans= cube(n1);
+          printf("Cube of number is = %d \n",ans);
+        break; 
+    // operator doesn't match any case constant
+    default:
+      printf("Error! operator is not correct");
+  }
 
-        case 2:
-            // Subtract num1 and num2
-            printf (" You chose: Subtraction");
-            printf ("\n Enter First Number: ");
-            scanf (" %d", &num1);
-            printf (" Enter Second Number: ");
-            scanf (" %d", &num2);
-            result = num1 - num2; // subtract num1 and num2
-            printf (" Subtraction of two numbers is: %.2f", result);
-            break; // break the function
-
-        case 3:
-            // Multiplication of num1 and num2
-            printf (" You chose: Multiplication");
-            printf ("\n Enter First Number: ");
-            scanf (" %d", &num1);
-            printf (" Enter Second Number: ");
-            scanf (" %d", &num2);
-            result = num1 * num2; // multiply num1 and num2
-            printf (" Multiplication of two numbers is: %.2f", result);
-            break; // break the function
-
-        case 4:
-            // Division of the numbers
-            printf (" You chose: Division");
-            printf ("\n Enter First Number: ");
-            scanf (" %d", &num1);
-            printf (" Enter Second Number: ");
-            scanf (" %d", &num2);
-            if (num2 == 0)
-                {
-                    printf (" \n Divisor cannot be zero. Please enter another value ");
-                    scanf ("%d", &num2);
-                }
-            result = num1 / num2; // divide num1 and num2
-            printf (" Division of two numbers is: %.2f", result);
-            break; // break the function
-
-        case 5:
-            // getting square of a number
-            printf (" You chose: Square");
-            printf ("\n Enter First Number: ");
-            scanf (" %d", &num1);
-
-            result = num1 * num1; // get square of a number
-            printf (" Square of %d number is: %.2f", num1, result);
-            break; // break the function
-
-        case 6:
-            //square root of the number
-            printf (" You chose: Square Root");
-            printf ("\n Enter First Number: ");
-            scanf (" %d", &num1);
-
-            result = num1%num2; // modulus of num1 and num2
-            printf (" Square Root of %d numbers is: %.2f", num1, result);
-            break; // break the function
-
-        case 7:
-            printf (" You chose: Exit");
-            exit(0);
-            break; // break the function        
-            default:
-            printf(" Something is wrong!! ");
-            break;
-    }
-    printf (" \n \n ********************************************** \n ");
-    } while (ch != 7);
-
-    return 0;
+  return 0;
 }
