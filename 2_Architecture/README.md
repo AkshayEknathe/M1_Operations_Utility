@@ -1,4 +1,5 @@
 # Architecture
-# Design
-*structure
-behavioural * flowchart * use case diagram
+## Flowchart
+![flowchart](https://user-images.githubusercontent.com/98874290/153408198-bd151a78-f101-44f4-977b-689349e41f78.png)
+## Sequence Diagram
+![Sequence Diagram](https://user-images.githubusercontent.com/98874290/153408384-fba0b6b2-03b5-4d4a-afd2-22ab45d5533d.png)
