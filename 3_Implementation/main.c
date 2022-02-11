@@ -1,4 +1,4 @@
-#include "calculator.h"
+#include "calculator.c"
 #include <stdio.h>
 
  int addition();
@@ -7,7 +7,8 @@ int multiplication();
 int division();
 int modulus();
 int power();
-int factorial(); // it is header file, conatins all function
+int factorial();
+int cube(); // it is header file, conatins all function
 int main() {
   // variable declaration
   int choice; 

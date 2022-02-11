@@ -1,11 +1,8 @@
-#TargetName:Dependencies
+#TargetName : Dependencies
 #<TAB>Commands
 
-Build : calculator.c main.c 
-	gcc calculator.c main.c  -o calculator.out
+Build : src/main.c src/calculator.c
+	gcc src/main.c src/calculator.c -o calculator.out
 
-Run: Build
+Run : calculator.out
 	./calculator.out
-
-Clean: 
-	rm -rf *.o *.out *.i *.s

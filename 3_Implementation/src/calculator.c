@@ -10,6 +10,7 @@
  */
 #include "calculator.h"
 #include <stdio.h>
+#include <stdlib.h>  
 
 int addition(int operand1, int operand2)
 {
