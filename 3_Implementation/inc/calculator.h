@@ -17,8 +17,6 @@ int Menu();
 /**
  * @brief 
  * 
- * @param operand1 
- * @param operand2 
  * @return int 
  */
 
@@ -26,53 +24,43 @@ int addition(int,int);
 /**
  * @brief 
  * 
- * @param operand1 
- * @param operand2 
  * @return int 
  */
-int subtraction(int operand1, int operand2);
+int subtraction(int, int);
 /**
  * @brief 
  * 
- * @param operand1 
- * @param operand2 
  * @return int 
  */
-int multiplication(int operand1, int operand2);
+int multiplication(int, int);
 /**
  * @brief 
  * 
- * @param operand1 
- * @param operand2 
  * @return int 
  */
-int division(int operand1, int operand2);
+int division(int, int);
 /**
  * @brief 
  * 
- * @param operand1 
- * @param operand2 
  * @return int 
  */
-int modulus(int operand1, int operand2);
+int modulus(int, int);
 /**
  * @brief 
  * 
  */
-int power(int operand1);
+int power(int);
 /**
  * @brief 
  * 
- * @param operand1 
  * @return int 
  */
-int factorial(int operand1);
+int factorial(int);
 /**
  * @brief 
  * 
- * @param operand1 
  * @return int 
  */
-int cube(int operand1);
+int cube(int);
 
 #endif  /* #define __CALCULATOR_H__ */

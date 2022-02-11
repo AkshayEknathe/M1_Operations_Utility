@@ -12,7 +12,7 @@ int main() {
   // variable declaration
   int choice; 
   int n1,n2, ans=0;
-  double s ;
+  // double s ;
   do
   {
   // printf("Select the operation you want perform");
@@ -27,7 +27,6 @@ choice=Menu();
     case 1:
       printf("Enter two number \n");
       scanf("%d %d",&n1,&n2);
-      
       ans = addition(n1,n2); //calling addition function
       
       printf("Addition of two numbers is  %d \n",ans);
