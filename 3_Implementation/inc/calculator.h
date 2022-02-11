@@ -1,17 +1,19 @@
+// Header Guard
+#ifndef CALCULATOR_H_
+#define CALCULATOR_H_
 /**
  * @file calculator.h
- * @author Akshay Eknathe (you@domain.com)
- * @brief  Calculator performing 7 arithmetic Operations
+ * @author Akshay Eknathe (akshayeknathe8788@gmail.com)
+ * @brief Header files
  * @version 0.1
- * @date 2022-02-10
+ * @date 2022-02-11
  * 
  * @copyright Copyright (c) 2022
  * 
  */
-
-#ifndef __CALCULATOR_H__
-#define __CALCULATOR_H__
-
+#include <stdio.h>
+#include <math.h>
+#include <stdlib.h>
 /**
  * @brief 
  * 
