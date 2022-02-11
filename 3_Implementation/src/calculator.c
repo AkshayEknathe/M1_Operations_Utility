@@ -8,9 +8,26 @@
  * @copyright Copyright (c) 2022
  * 
  */
-#include "calculator.h"
+#include"calculator.h"
 #include <stdio.h>
 #include <stdlib.h>  
+
+int Menu() {
+ 	int choice;
+    printf("\n Hello:) This is your Simple Calculator \n\n");
+    printf(" Select the operation you want perform:-\n\n");
+    printf("  1   Addition\n");
+    printf("  2   Subtraction\n");
+    printf("  3   Multiplication\n");
+    printf("  4   Division\n");
+    printf("  5   Modulus\n");
+    printf("  6   Power\n");
+    printf(" 7   Factorial\n");
+    printf(" 8   Cube\n");
+    printf(" 9   Exit\n");
+    scanf("%d",&choice);
+    return choice;
+}
 
 int addition(int operand1, int operand2)
 {
@@ -29,9 +46,6 @@ int multiplication(int operand1, int operand2)
 
 int division(int operand1, int operand2)
 {
-    if(operand2==0)
-       return 0;
-    else
         return operand1 / operand2;
 }
 
@@ -48,19 +62,11 @@ int power(int operand1)
 int factorial(int a)
 {
     int i,fact=1;
- 
-   
-    if (a<=0) //checking for negative value
-    {
-        printf("\nPlease enter a positive number to");
-        return 0;
-                  //function termination
-    } 
-    // calculating factorial using for loop
     for(i=1;i<=a;i++)
-    fact=fact*i;
-   
-    
+    {
+        fact=fact*i;
+    }
+ 
     return fact; //return factocial value to main funtion 
 }
 int cube(int operand1)

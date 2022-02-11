@@ -1,6 +1,6 @@
 // Header Guard
-#ifndef CALCULATOR_H_
-#define CALCULATOR_H_
+#ifndef calculator_h_
+#define calculator_h_
 /**
  * @file calculator.h
  * @author Akshay Eknathe (akshayeknathe8788@gmail.com)
@@ -12,8 +12,8 @@
  * 
  */
 #include <stdio.h>
-#include <math.h>
 #include <stdlib.h>
+int Menu();
 /**
  * @brief 
  * 
@@ -22,7 +22,7 @@
  * @return int 
  */
 
-int addition(int operand1, int operand2);
+int addition(int,int);
 /**
  * @brief 
  * 
