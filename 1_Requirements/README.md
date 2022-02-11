@@ -6,15 +6,20 @@ So in this project the input has to be in a form "Number1 (Operator) Number2". F
 *A basic calculator is sometimes referred to as a 4-function calculator. It's able to do simple arithmetic operations, which includes addition, subtraction, multiplication, and division. Use a basic calculator at home to figure out your monthly budget, or when you're trying to cook a new recipe*
 ## Requirements
 # High Level Requirements:-
-* User should able to know what operations he/she can perform.
-* User should able to view operation list.
-* User should able to select the operation efficiently.
-* The system should able perform the given operation.
-* The system should provide Accurate/correct result with less time.
+|ID|Description|Category|Status|
+|------|-------|---------|--------|
+|HR01|User should able to know what operations he/she can perform|TECHNICAL|IMPLEMENTED|
+|HR02| User should able to view operation list|TECHNICAL|IMPLEMENTED|
+|HR03|User should able to select the operation efficiently|TECHNICAL|IMPLEMENTED|
+|HR04|The system should able perform the given operation|TECHNICAL|IMPLEMENTED|
+|HR05|The system should provide Accurate/correct result with less time|TECHNICAL|IMPLEMENTED|
 # Low Level Requirements:-
-* If the calculations is impossible the calculator has to display information helping the user to resolve the erroneous situation.
-* On encountering a division by 0 the display should read "Cannot divide by 0" and by typing the key “C” should reset the calculator.
-* On calculating the square root value of a negative operand, the display should read "Wrong operand".
+|ID|Description|Category|Status|
+|------|-------|---------|--------|
+|LR01|If the calculations is impossible the calculator has to display information helping the user to resolve the erroneous situation|TECHNICAL|IMPLEMENTED|
+|LR02|On encountering a division by 0 the display should read "Cannot divide by 0" and by typing the key “C” should reset the calculator|TECHNICAL|IMPLEMENTED|
+|LR03|On calculating the square root value of a negative operand, the display should read "Wrong operand"|TECHNICAL|IMPLEMENTED|
+|LR04|User Friendly UI Of Calculator|TECHNICAL|IMPLEMENTED|
 # SWOT
 ## STRENGTHS
 * The  strength of this Calculator is its user-friendly nature and long lasting etc..
