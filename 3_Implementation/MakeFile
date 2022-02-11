@@ -94,6 +94,3 @@ clean:
 # Create new build folder if not present
 $(BUILD):
 	mkdir build
-
-Run : build/calculator.out.out
-	./build/calculator.out.out
