@@ -17,8 +17,9 @@ So in this project the input has to be in a form "Number1 (Operator) Number2". F
 |-------|
 |https://app.codiga.io/public/project/31116/M1_Operations_Utility/dashboard|
 
-
-
+|Codeac|
+|-------|
+|[![Codeac](https://static.codeac.io/badges/2-454709190.svg "Codeac")](https://app.codeac.io/github/AkshayEknathe/M1_Operations_Utility)|
 
 ## Folder structure
 |Folder Name|Description|
