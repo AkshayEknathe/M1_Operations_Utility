@@ -1,4 +1,5 @@
 # Architecture
+## Behavioural Diagram
 ## Flowchart
 ![flowchart](https://user-images.githubusercontent.com/98874290/153408198-bd151a78-f101-44f4-977b-689349e41f78.png)
 ## Sequence Diagram
