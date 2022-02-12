@@ -1,8 +1,8 @@
 # Basic Calculator
 * Basic Calculator is a project which can help the user to do simple maths calculations like Addition, Subtraction ,Multiplication ,division , Factorial, Power ,modulas,Finding Cube in faster and  accurate manner.
-Basic calculator is very time saving and accurate tool to perform calculations.
-Mainly Calculator is used to do large calculations and to get accurate result in less Time.
-I have added Addition,Subtraction,Multiplication,Division,Modules,Factorial,Power,cube these many  operations for the User to perform.
+* Basic calculator is very time saving and accurate tool to perform calculations.
+* Mainly Calculator is used to do large calculations and to get accurate result in less Time.
+* I have added Addition,Subtraction,Multiplication,Division,Modules,Factorial,Power,cube these many  operations for the User to perform.
 ##  What is the purpose of a basic calculator?
 * A basic calculator is sometimes referred to as a 4-function calculator. It's able to do simple arithmetic operations, which includes addition, subtraction, multiplication, and division. Use a basic calculator at home to figure out your monthly budget, To Help Shopkeepers to do Simple Calculations in Fast way.
 
